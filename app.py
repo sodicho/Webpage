@@ -7,15 +7,15 @@ def hello_world():
 
 @app.route('/acting')
 def acting():
-	return render_template('acting.html', title = 'Acting')
+	return render_template('home.html', title = 'Acting')
 
 @app.route('/CS')
 def compSci():
-	return render_template('cs.html', title = 'CS Development')
+	return render_template('home.html', title = 'CS Development')
 
 @app.route('/contact')
 def contact():
-	return render_template('contact.html', title = 'Contact')
+	return render_template('home.html', title = 'Contact')
 
 if __name__ == '__main__':
 	app.run(debug = True)

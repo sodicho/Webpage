@@ -1,13 +1,119 @@
-{%extends 'layout.html' %}
-
+{% extends 'layout.html' %}
 
 {% block body %}
+	<div class ='theimg'>
+		<div class='container' style='margin-top:100px; font-family: Courier New, monospace;'>
+			<center><h1><b><big>Sargon Odicho</big></b></h1></center>
+			<center><h2> My love for acting and computer science all in one page.</h2></center>
+			<center><h2> Experience, projects, work, and why I do it</h2></center>
 
-	<center><h1><b>Sargon Odicho</b></h1></center>
-	<center><h3> My love for acting and computer science all in one page.</h3></center>
 
-	<img src = "https://static.hudl.com/users/prod/4056313_0cf2703daca84bae9aef1656d0d1ca45.jpg">
-	<center><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis massa tincidunt dui. Sit amet venenatis urna cursus. Dignissim sodales ut eu sem integer vitae justo eget magna. Pellentesque pulvinar pellentesque habitant morbi. Arcu cursus vitae congue mauris rhoncus aenean. Dolor magna eget est lorem ipsum dolor. Dolor sed viverra ipsum nunc aliquet. Rhoncus urna neque viverra justo nec ultrices dui. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Id porta nibh venenatis cras sed felis eget velit. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse.Sit amet aliquam id diam maecenas. Netus et malesuada fames ac turpis. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Volutpat odio facilisis mauris sit. Enim sed faucibus turpis in eu mi bibendum neque. Posuere lorem ipsum dolor sit. Elementum facilisis leo vel fringilla est. Quis varius quam quisque id diam. Auctor augue mauris augue neque gravida. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Tellus pellentesque eu tincidunt tortor. Netus et malesuada fames ac turpis egestas integer. Adipiscing bibendum est ultricies integer quis auctor elit. Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Ut consequat semper viverra nam. Suspendisse in est ante in nibh mauris cursus mattis molestie. Morbi tincidunt ornare massa eget egestas purus. Eleifend donec pretium vulputate sapien nec sagittis. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque. Risus in hendrerit gravida rutrum quisque non tellus orci. Diam vulputate ut pharetra sit amet. In hendrerit gravida rutrum quisque non tellus orci. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Aliquam ut porttitor leo a diam sollicitudin tempor. Lorem ipsum dolor sit amet consectetur. Mauris sit amet massa vitae tortor. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Sed sed risus pretium quam vulputate dignissim suspendisse in est. Gravida neque convallis a cras semper auctor neque. Non odio euismod lacinia at quis risus sed vulputate. Lacus luctus accumsan tortor posuere ac. Mi quis hendrerit dolor magna. Sodales ut eu sem integer vitae. Aenean et tortor at risus viverra adipiscing at in tellus.</p></center>
+		</div>
+
+		
+		<div class = 'jumbotron' style='background-color:transparent; text-align:center;'>
+				<!--<h1 class="ml1">
+			  	<span class="text-wrapper">
+			    <span class="line line1"></span>
+			    <span class="letters" style='letter-spacing: 20px'>CODING || ACTING</span>
+			    <span class="line line2"></span>
+			  	</span>
+				</h1>-->
+				<br>
+				<h1 class="ml12" style='letter-spacing:20px; font-size:80px; font-weight:bold;'>CODING || ACTING</h1>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+	</div>
+</div>
+	
+
+	<div class="container" style="padding-bottom:100px">
+		<center><h2> Experience  </h2></center>
+
+		<div class ="row" style="background-color: #000 !important;font-family: Courier New, monospace;">
+
+		<div class ="col-xs-6 col-sm-6" style='font-family: Courier New, monospace;'>
+			<center> <h3 style="color:#fff">  Computer Science </h3></center>
+			<h4 style="color:#fff"> Applications/Projects </h4>
+			<ul>
+				<li> SoundMind (Music social media) </li>
+				<li> Assignment Planner (Group project, Full Stack)</li>
+				<li> AI roomba vacuum software. </li> 
+				<li> Developing and creating webapps for companies </li> 
+			</ul>
+
+		</div>
+
+  		<div class="col-xs-6 col-sm-6" >
+			<center> <h3 style="color:#fff"> Acting </h3> </center>
+			<h4 style="color:#fff"> Classes </h4>
+			<ul>
+				<li> Fundamentals of Acting </li>
+				<li> Performance I and II </li>
+				<li> Acting III </li>
+				<li> Acting Shakespeare </li>
+				<li> Acting for the Camera </li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script>
+	// Wrap every letter in a span
+	// Credit to Tobais Ahlin for this beatiful design
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml1 .letter',
+    scale: [0.3,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 70 * (i+1)
+  }).add({
+    targets: '.ml1 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700,
+    offset: '-=875',
+    delay: (el, i, l) => 80 * (l - i)
+  }).add({
+    targets: '.ml1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script>
+
+	<div class="container-fluid" style ='font-family: Courier New, monospace;'>
+
+			
+	</div>
 
 {% endblock %}
 
