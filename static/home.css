@@ -2,8 +2,24 @@
 .container{
 	background-color: transparent;	
 	color: #fff;
-	text-align: center;
 
+}
+.creativity{
+  background-color: transparent;  
+  color: #fff;
+  text-align: center;
+
+}
+
+@media (max-width: 500px){
+      .ml12{
+        font-size:50px !important;
+      }
+      
+    }
+
+.showing{
+  z-index: 1;
 }
 
 
@@ -59,7 +75,7 @@
 
 .ml12 {
   font-weight: 200;
-  font-size: 1.8em;
+  font-size: 80px;
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
@@ -70,17 +86,7 @@
 }
 
 
-
-	
-ul {
-	float:left;
-	border-radius: 15px 15px;
-
-
-}
-
-li {
-	color:#fff;
-
+.list-group{
+  color: #000 !important;
 
 }

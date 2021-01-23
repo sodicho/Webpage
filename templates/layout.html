@@ -29,22 +29,22 @@
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <button  style="background-color:#000 !important;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-    	<a class="navbar-brand" href="./" style="color:#fff!important; font-weight:bold; text-align:center;">Sargon Odicho</a>
+    	<a class="navbar-brand" href="#home" style="font-weight:bold; text-align:center;">Sargon Odicho</a>
     </li>
       <li class="nav-item">
-        <a class="navbar-brand" href="./"style="color:#fff!important;font-weight:bold;">Computer Science <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#CS"style="font-weight:bold;">Computer Science <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="navbar-brand" href="./"style="color:#fff!important;font-weight:bold;">Acting</a>
+        <a class="navbar-brand" href="#act"style="font-weight:bold;">Acting</a>
     </li>
       <li class="nav-item" >
-        <a class="navbar-brand" href="./"style="color:#fff!important;font-weight:bold;">Contact</a>
+        <a class="navbar-brand" href="#why"style="font-weight:bold;">Why?</a>
       </li>
       
     </ul>
@@ -87,16 +87,32 @@
 	</style>
 
 <script>
+  $(function() {
+        $(document).scroll(function (){
+            var $nav = $(".navbar");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+        });
+    });
     
-    function hovering(){
-      var x = document.getElementById("myTopnav");
-      if(x.className === "collapse navbar-collapse"){
-        x.className += " responsive";
-      }
-      else {
-        x.className = "collapse navbar-collapse";
-      }
-    }
+    
+
+   /* $(document).ready(function() {
+    	$("a").on('click', function(event) {
+    		if (this.hash !== ""){
+    			event.preventDefault();
+
+    			var hash = this.hash;
+
+    			$('html,body').animate({
+    				scrollTop: $(hash).offset().top
+    			}, 800, function(){
+
+    				window.location.hash = hash;
+    			});
+    		}
+    	});
+    });*/
 
 </script>
 

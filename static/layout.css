@@ -1,16 +1,17 @@
 
 
 		.navbar {
-  			height: 80px;
-  			position:absolute;
+  			height: 70px;
+  			position:fixed;
   			width:100%;
   			z-index: 10 !important;
   			background-color: transparent !important;
   			font-family: Courier New, monospace;
+  			transition: all .2s ease-out;
+
 		}
 
 		.navbar-brand {
-		  color:#fff;
 		  height: 50px;
 		  line-height: auto;
 		  font-size:18px;
@@ -28,16 +29,32 @@
 		  padding: 20px 10px !important;
 		}
 
+		.navbar.scrolled {
+			background-color: #2B2D2F !important;
+			transition: all .2s ease-in;
+		}
+
+		/*.navbar.  {
+			color:#000 !important;
+		}*/	
+
+	
+
 		@media (min-width: 768px) {
 		  .navbar-nav > li > a {
 		    /* (80px - line-height of 27px) / 2 = 26.5px */
 		    padding-top: 26.5px;
 		    padding-bottom: 26.5px;
 		    line-height: 27px;
-		    color:#fff !important;
 		  }
 		}
 
+		@media (max-width: 500px){
+			.navbar-collapse{
+				background-color: #000 !important;
+			}
+
+		}
 		
 		/*nav a:hover{
 			background-color: #ffffff;
@@ -93,7 +110,7 @@
 			z-index:1;
 			padding-left:0px;
 			padding-top: 200px;
-			/*
+					/*
 			Fix the position on the left, try to make it small were not gonna make it blocky.
 			*/
 
@@ -107,12 +124,12 @@
 		.fa {
   			padding: 5px;
  	 		font-size: 25px;
-  			width: 30px;
+  			width: 35px;
   			text-align: center;
   			text-decoration: none;
-  			border-radius: 50%;
+  			border-radius: 25%;
   			transition: .5s;
-  			font-weight:;
+  			background-color:#fff;
 
   		}
 			/*
@@ -123,6 +140,10 @@
 			background-color: #000000;
 			color: #ffffff;
 			font-family: Courier New, monospace;
+		}
+
+		html{
+  			scroll-behavior: smooth;
 		}
 
 	
