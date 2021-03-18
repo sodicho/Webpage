@@ -2,6 +2,7 @@
 .container{
 	background-color: transparent;	
 	color: #fff;
+  padding: 50px;
 
 }
 .creativity{
@@ -11,12 +12,12 @@
 
 }
 
-@media (max-width: 500px){
+@media (max-width: 1000px){
       .ml12{
         font-size:50px !important;
       }
       
-    }
+  }
 
 .showing{
   z-index: 1;
@@ -86,7 +87,17 @@
 }
 
 
-.list-group{
-  color: #000 !important;
+  .list-group{
+    color: #000 !important;
+  }
+
+#footer{
+  background-image: url('/static/Rand_back.jpeg');
+  padding-top:1px;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1 !important; 
 
 }

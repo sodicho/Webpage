@@ -30,30 +30,34 @@
 		}
 
 		.navbar.scrolled {
-			background-color: #2B2D2F !important;
-			transition: all .2s ease-in;
+			background-color: rgb(60, 70, 70) !important;
+			transition: all .2s ease-in
 		}
-
-		/*.navbar.  {
-			color:#000 !important;
-		}*/	
-
 	
 
-		@media (min-width: 768px) {
+		@media (max-width: 1000px) {
 		  .navbar-nav > li > a {
 		    /* (80px - line-height of 27px) / 2 = 26.5px */
 		    padding-top: 26.5px;
 		    padding-bottom: 26.5px;
 		    line-height: 27px;
 		  }
+		  
 		}
 
-		@media (max-width: 500px){
+		@media (max-width: 768px){
+
 			.navbar-collapse{
 				background-color: #000 !important;
+				
 			}
 
+		}
+
+		@media (max-width: 768px){
+			.sidenav{
+		  	display: none !important;
+		  }
 		}
 		
 		/*nav a:hover{
