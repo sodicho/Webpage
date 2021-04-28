@@ -32,16 +32,16 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-    	<a class="navbar-brand" href="#home" style="font-weight:bold; text-align:center;">Sargon Odicho</a>
+    	<a class="navbar-brand" href="#home" onclick="click(this.id)" style="font-weight:bold; text-align:center;">Sargon Odicho</a>
     </li>
       <li class="nav-item">
-        <a class="navbar-brand" href="#CS"style="font-weight:bold;">Computer Science <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#CS" onclick="click(this.id)" style="font-weight:bold;">Computer Science <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="navbar-brand" href="#act"style="font-weight:bold;">Acting</a>
+        <a class="navbar-brand" href="#act" onclick="click(this.id)" style="font-weight:bold;">Acting</a>
     </li>
       <li class="nav-item" >
-        <a class="navbar-brand" href="#why"style="font-weight:bold;">Why?</a>
+        <a class="navbar-brand" href="#why" onclick="click(this.id)" style="font-weight:bold;">Why?</a>
       </li>
     </ul>
   </div>
@@ -71,47 +71,14 @@
 	{% block body %}
 	{% endblock %}
 
+	<script src = "{{ url_for('static', filename='main.js') }}"></script>
+
 
 	<!-- <footer class="footer">
 		<div class="inner">
 			<p1>Copyright 2020 Sargon Odicho. </p1>
 		</div>
 	</footer> -->
-	<style type="text/css">
-	{% block css%}
-	{% endblock %}
-	</style>
-
-<script>
-  $(function() {
-        $(document).scroll(function (){
-            var $nav = $(".navbar");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-
-        });
-    });
-    
-    
-
-   /* $(document).ready(function() {
-    	$("a").on('click', function(event) {
-    		if (this.hash !== ""){
-    			event.preventDefault();
-
-    			var hash = this.hash;
-
-    			$('html,body').animate({
-    				scrollTop: $(hash).offset().top
-    			}, 800, function(){
-
-    				window.location.hash = hash;
-    			});
-    		}
-    	});
-    });*/
-
-</script>
-
 
 
 </body>
