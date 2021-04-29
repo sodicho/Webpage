@@ -16,12 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
-	
-	{%if title %}
-		<title>Sargon Odicho - {{ title }}</title>
-	{% else %}
+
 		<title>Sargon Odicho</title>
-	{% endif %}
 </head>
 <body>
 
@@ -66,11 +62,6 @@
 			<span class ="fa fa-github"></span>
 		</a>	
 	</div>
-
-
-	{% block body %}
-	{% endblock %}
-
 	<script src = "{{ url_for('static', filename='main.js') }}"></script>
 
 
