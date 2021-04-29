@@ -1,0 +1,163 @@
+
+
+		.navbar {
+  			height: 70px;
+  			position:fixed;
+  			width:100%;
+  			z-index: 10 !important;
+  			background-color: transparent !important;
+  			font-family: Courier New, monospace;
+  			transition: all .2s ease-out;
+
+		}
+
+		.navbar-brand {
+		  height: 50px;
+		  line-height: auto;
+		  font-size:18px;
+		}
+
+
+		.nav-item{
+			font-size:16px;
+
+		}
+
+		.navbar-toggle {
+		  /* (80px - button height 34px) / 2 = 23px */
+		  margin-top: 23px;
+		  padding: 20px 10px !important;
+		}
+
+		.navbar.scrolled {
+			background-color: rgb(60, 70, 70) !important;
+			transition: all .2s ease-in
+		}
+	
+
+		@media (max-width: 1000px) {
+		  .navbar-nav > li > a {
+		    /* (80px - line-height of 27px) / 2 = 26.5px */
+		    padding-top: 26.5px;
+		    padding-bottom: 26.5px;
+		    line-height: 27px;
+		  }
+		  
+		}
+
+		@media (max-width: 768px){
+
+			.navbar-collapse{
+				background-color: #000 !important;
+				
+			}
+
+		}
+
+		@media (max-width: 768px){
+			.sidenav{
+		  	display: none !important;
+		  }
+		}
+		
+		/*nav a:hover{
+			background-color: #ffffff;
+			color:black;
+			transition:all .7s ease-in;
+			border-radius: 50px
+
+		}
+
+		nav a:not(:hover){
+			opacity:1;
+			transition:all .5s ease-out;
+		}
+
+*/
+		li > a {
+		  position: relative;
+		  color: #000;
+		  text-decoration: none;
+		}
+
+		li > a:hover {
+		  color: #fff;
+		}
+		li > a::before {
+		  content: "";
+		  position: absolute;
+		  width: 100%;
+		  height: 2px;
+		  bottom: 0;
+		  left: 0;
+		  background-color: #fff;
+		  visibility: hidden;
+		  transform: scaleX(0);
+		  transition: all 0.3s ease-in-out 0s;
+		}
+
+		li > a:hover::before {
+		  visibility: visible;
+		  transform: scaleX(1);
+		}
+
+		.topnav-right  {
+			float: right;
+		}
+		.topnav .icon {
+			display: none;
+		}
+
+		.sidenav {
+			position: fixed;
+			overflow-x: hidden;
+			z-index:1;
+			padding-left:0px;
+			padding-top: 200px;
+					/*
+			Fix the position on the left, try to make it small were not gonna make it blocky.
+			*/
+
+		}
+
+		.sidenav a{
+			padding: 6px 8px 6px 16px;
+			display: block;
+		}
+
+		.fa {
+  			padding: 5px;
+ 	 		font-size: 25px;
+  			width: 35px;
+  			text-align: center;
+  			text-decoration: none;
+  			border-radius: 25%;
+  			transition: .5s;
+  			background-color:#fff;
+
+  		}
+			/*
+			For the icons make some padding and find a good position for them
+			*/
+
+		body{
+			background-color: #000000;
+			color: #ffffff;
+			font-family: Courier New, monospace;
+		}
+
+		html{
+  			scroll-behavior: smooth;
+		}
+
+	
+		/*.footer {
+			bottom:0px;
+			height:20px;
+			width:100%;
+			text-align: center;
+			background-color: black;
+			color: white;
+			font-family: Courier New, monospace;
+		}
+*/
