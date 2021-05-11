@@ -47,7 +47,7 @@
 			letter-spacing: normal !important;
 		  }
 		  .code{
-			  width:300px;
+			  width:275px;
 			  height:200px;
 		  }
 		  .fa{
@@ -56,6 +56,12 @@
 
 		  }
 		  
+		}
+
+		@media (max-width: 768px){
+			.ml12{
+				font-size:35px !important;
+			}
 		}
 
 		@media (max-width: 768px){
