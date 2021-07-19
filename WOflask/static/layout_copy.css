@@ -39,6 +39,16 @@
 			img{
 				display:none;
 			}
+			#CS{
+				padding-left:17px;
+			}
+			#act{
+				padding-left:17px;
+			}
+			#why{
+				padding-left:17px;
+			}
+			
 		}
 	
 
@@ -53,10 +63,6 @@
 			font-size:40px !important;
 			letter-spacing: normal !important;
 		  }
-		  .code{
-			  width:275px;
-			  height:200px;
-		  }
 		  .fa{
 			  font-size: 15px !important;
 			  width: 25px !important;
@@ -68,6 +74,7 @@
 		@media (max-width: 768px){
 			.ml12{
 				font-size:30px !important;
+				text-align:center;
 			}
 		}
 
@@ -312,7 +319,7 @@
 			background-color: rgb(60, 70, 70);
 			text-align:center;
 			padding-top:1px;
-			height:100px;
+			height:auto;
 			color:#fff; 
 	
 		}
