@@ -17,34 +17,32 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/layout_copy.css">
 
+
 		<title>Sargon Odicho</title>
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <button  style="background-color:#000 !important;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark" id='nav'>
+  <button class="navbar-toggler" style='background-color:black !important;'type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-    	<a class="navbar-brand" href="#home" style="font-weight:bold; text-align:center;">Sargon Odicho</a>
+    	<a class="navbar-brand" id='ho' href="#about">Sargon Odicho</a>
     </li>
       <li class="nav-item">
-        <a class="navbar-brand" href="#CS" style="font-weight:bold;">Computer Science <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" id='compsci' href='#CS'>Computer Science <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="navbar-brand" href="#act" style="font-weight:bold;">Acting</a>
+        <a class="navbar-brand" id='aft' href="#act">Acting</a>
     </li>
       <li class="nav-item" >
-        <a class="navbar-brand" href="#why" style="font-weight:bold;">Why?</a>
+        <a class="navbar-brand" id='last' href="#why">Why?</a>
       </li>
     </ul>
   </div>
 </nav>
-
-
-
 	<div class = "sidenav">
 		<a href="https://www.facebook.com/sargon.odicho.5/">
 			<span class ="fa fa-facebook"></span>
@@ -63,54 +61,76 @@
 		</a>	
 	</div>
 
-  <div class='random' id ='home'></div>
-	<div class ='theimg'>
-		<div class='container' style='margin-top:100px; font-family: Courier New, monospace;'>
-			<center><h1><b><big>Sargon Odicho</big></b></h1></center>
-			<center><h2> My love for acting and computer science all in one page.</h2></center>
-			<center><h2> Experience, projects, work, and why I do it</h2></center>
+  <div class='container-fluid' id='together'>
+	
+		<div class='container-fluid' id='home'></div>
+      <div class='jumbotron' style='background-color:inherit'>
+      <h1 class="ml12">CODING || ACTING </h1>
 
+      <h1> Sargon Odicho </h1>
 
-		</div>
-		
-		<div class = 'jumbotron' style='background-color:transparent; text-align:center;'>
-				<br>
-				<h1 class="ml12" style='letter-spacing:20px; font-weight:bold;'>CODING || ACTING</h1>
+			<h2> My love for coding and acting all in one page.</h2>
+			<h2> Experience, projects, work, and why I do it</h2>
+      <hr>
 
+      </div>
 
-	</div>
-
-
-</div>
-
-	<div class="container" id = 'CS'style= 'background-color:rgba(47, 79, 79, 0.61) !important;border-style: double !important; border-color: #fff '>
-		<div class ="jumbotron" style="background-color: #000 !important;font-family: Courier New, monospace;">
-			<div class='row'>
-      <div class='col-sm-6'>
-        <h1><u>Coding</u></h1>
-        </div>
-        <div class='col-sm-6'>
-         <img class ="code" src ='https://media0.giphy.com/media/26tn33aiTi1jkl6H6/200.gif'>
+  <div class="container-fluid" id='about'>
+    <div class ="jumbotron">
+        <h1> <u>About me</u> </h1>
+      <div class='row'>
+        <div class='col-sm-8'> 
+        <h2>Software engineer, Actor, and Filmmaker. </h2>
+            <br>
+            <br>
+          <p>As a software engineer, I enjoy coding in itself. It brings me joy because of its
+            constant growth, which challenges me to keep learning. The paths in computer science are immense.
+            Web development and data science are two areas I find the most interest and passion.
+            <br>
+            <br>
+            As an actor and filmmaker, I enjoy the art in telling stories. Nothing excites me more than
+            collaborating with others to put together a meaningful story that showcases the skill of 
+            adopting characters. Writing is a big part of this passion as well, and has helped me hone my skills
+            as an actor.
+          </p>
           </div>
+      </div>
+    </div>
+  </div>
+
+	<div class="container-fluid" id = 'CS'>
+		<div class ="jumbotron">
+			<div class='row'>
+        <h1><u>Coding</u></h1>
       </div> 
     </div>
 			<div class='row'>
-				<div class ='col-sm-12' style="text-align:left;">
-					<h1> INT. CODING IS CREATIVITY </h1>
-                    <p style='font-size:2rem !important'> There are so many ways to solve problems, design, and bring your ideas to life by just simply coding. I think what really attracts me is the freedom in the practice. I love to be able to think freely, create, and find ways to do things differently and effectively.</p>
-                    <br>
-                    <p style ='font-size:2rem !important'> Sounds like it's simple, but if you've never done it and you lay your eyes on something like the picture above, it can be a bit intimidating.</p>
-                    <hr>
-
-				</div>
+        <div class='col-sm-8'>
+          <h1> INT. CODING IS CREATIVITY </h1>
+              <p style='font-size:2rem'> There are so many ways to solve problems, design,
+                       and bring your ideas to life by through coding. 
+                       I think what really attracts me is the freedom in the practice. 
+                       I love to be able to think freely, create, and find ways to do things differently 
+                       and effectively.</p>
+              <br>
+              <p style ='font-size:2rem'> When creating something I find there is usually some kind of struggle, roadblock,
+              or something that gets in your way. Whether it be your own project or something you are contributing to,
+            it doesn't matter. What matters is that you were able to get passed it and find a way to the solution. It doesn't
+            have to deal with the functionality aspect, but it can also be apart of design, security, or anything important to the idea.
+           Whatever the case may be you were able to get passed the roadblock, and that is something I live for in coding. </p>
+              <hr>
+              </div>
+              <div class='col-sm-4'>
+                <img class ="code" style='height:300px; width:400px;' src ='https://media0.giphy.com/media/26tn33aiTi1jkl6H6/200.gif'>
+                 </div>
 			</div>
             <br>
             <br>
             <h1> Coding Work </h1>
-            <div class='row'>
+            <div class='row' id='screenplay'>
                 <div class ='col-sm-6'>
                     <h2> Side/School Projects </h2>
-                    <ul style='color:#fff !important; float:left; font-size:18px'>
+                    <ul>
                       <li>SoundMind (Side) || Music social media</li>
                       <li> MyJournal (Side) || Digital Journal</li>
                       <li> Assignment Planner (School) || Event/School Planner</li>
@@ -120,10 +140,10 @@
                 </div>
                 <div class ='col-sm-6'>
                     <h2> Languages </h2>
-                   <ul style='color:#fff !important; float:left; font-size:18px'>
-                      <li>Python || Pandas, Sci-kit, Numpy, Seaborn, Matplotlib</li>
-                      <li>C++</li>
-                      <li>HTML | CSS | JavaScript</li>
+                   <ul>
+                      <li>Python | Pandas, Sci-kit, Seaborn</li>
+                      <li>JavaScript | ReactJS</li>
+                      <li>HTML/CSS</li>
                       <li> Swift </li>
                       <li> SQL </li>
                     </ul>
@@ -132,33 +152,39 @@
 
                 </div>
             </div>
-
-    </div>
-    <div class="container" id='act' style = 'background-color:rgba(47, 79, 79, 0.61) !important;border-style: double !important; border-color: #fff '>
-        <div class ="jumbotron" style="background-color: #000 !important;font-family: Courier New, monospace;">
+            <br>
+    <div class="container-fluid" id='act'>
+        <div class ="jumbotron">
           <div class='row'>
-            <div class='col-sm-6'>
               <h1><u>Acting</u></h1>
-              </div>
-              <div class='col-sm-6'>
-               <img src ='https://i.pinimg.com/originals/5b/ae/e8/5baee8498c5289a20332096c4cab6e4b.gif'>
-                </div>
             </div> 
         </div>
             <div class='row'>
-                <div class ='col-sm-12' style="text-align:left;">
+                <div class ='col-sm-8'>
                     <h1> EXT. ACTING IS CREATIVITY </h1>
-                    <p style='font-size:2rem'> Just like there is a certain creativity to coding, I feel like the same type of creativity applies to acting. There is not a certain way to play a character. Given a scene and circumstances, it is how you believe it should be portrayed. There can be multiple ways.<br> <br> Of course, certain ways to play a character can be better than others, and I feel like that directly relates to coding. You can solve a problem two different ways, but one way might take less space and be quicker. Playing a character could be done in two ways, and one of the portrayals could be more appealing than the other.  </p>
-                    <hr>
-                </div>
+                    <p style='font-size:2rem'>  
+                      I feel like the same type of creativity applies to acting. There is not a 
+                      certain way to play a character. Given a scene and circumstances, it is 
+                      how you believe it should be portrayed. There can be multiple ways.<br> <br> 
+                      Of course, certain ways to play a character can be better than others, but that is apart of
+                      being creative. How can you seperate yourself, what are the details that might give you an edge
+                      in your performance rather than someone else of the same character. Although I love to look for
+                      competition in this way, I believe that the joy comes from learning and adopting the character to tell a story,
+                      send a message, and put on a performance anyone would believe. That is something I live for in acting.
+                    </p>
+                      <hr>
+                    </div>
+                <div class='col-sm-4'>
+                  <img style='height:350px;'src ='https://i.pinimg.com/originals/5b/ae/e8/5baee8498c5289a20332096c4cab6e4b.gif'>
+                   </div>
             </div>
             <br>
-            <br>
+            <br>  
             <h1> Acting Work </h1>
-            <div class='row'>
+            <div class='row' id='screenplay'>
                 <div class ='col-sm-6'>
-                    <h2> Films | Acting/Writing </h2>
-                    <ul style='color:#fff !important; float:left; font-size:18px'>
+                    <h2> Acting/Writing Films </h2>
+                    <ul>
                       <li>Through The Lens (Actor, Josh)</li>
                       <li> SAGE (Writer) To be made</li>
                       <li> Dead & Gone (Writer) To be made</li>
@@ -167,27 +193,42 @@
                 </div>
                 <div class ='col-sm-6'>
                     <h2> Classes </h2>
-                   <ul style='color:#fff !important; float:left; font-size:18px'>
+                   <ul>
                       <li> Acting III </li>
                       <li> Acting for the Camera </li>
                       <li> Performance II </li>
                     </ul>
                 </div>
-                </div>
+              </div>
         </div>
-        <div class="container" id='why'  style = 'background-color:rgba(47, 79, 79, 0.61) !important;border-style: double !important; border-color: #fff '>
-    <div class ="jumbotron" style="background-color: #000 !important;font-family: Courier New, monospace;">
+        <br>
+  <div class="container-fluid" id='why'>
+    <div class ="jumbotron">
       <h1><u>Why?</u></h1>
         </div>
       <div class='row'>
-        <div class ='col-sm-12' style="text-align:left;">
+        <div class ='col-sm-12'>
           <h1> INT./EXT. Why Computer Science? Why Acting? </h1>
-                    <p style='font-size:2rem'> If I were to be short about it, I think it's because I love to code and I love to act. But, there is so much within that love. </p>
+                    <p> If I were to be short about it, I think it's because I love to code and I love to act. 
+                      But, there is so much within that love. </p>
                     <br>
-                    <p style ='font-size:2rem'> I love to act because I get a release from it. Nothing beats the goosebumps you get when you do something that shocks even yourself. Having a process is key. Everyone is different, but really digging deep into a character, and creating a past for them is something I find helpful. A lot of it is about just <i>doing</i> not acting. It's not easy to explain, but it is a beautiful feeling. </p> 
+                    <p> I love to act because I get a release from it. 
+                      Nothing beats the goosebumps you get when you do something that shocks even yourself. 
+                      Having a process is key. Everyone is different, but really digging deep into a character, 
+                      and creating a past for them is something I find helpful. I truly enjoy the creation of the character
+                      and the process leading up to the performance because that is what makes the performance. 
+                      A lot of it is about just <i>doing</i> not acting. </p> 
                     <br>
 
-                    <p style ='font-size:2rem'> I love to code because of nearly the same thing, but in a different form. It's still got a process similar to acting, but it feels quicker to me. Preparing and understanding a problem, then being able to apply it in projects, algorithms, etc. It is fulfilling not only because you solved the problem, but because you have another solution under your belt. As you begin to build up your arsenal of skills, you feel like you can take on anything. <br><br> You can constantly grow, and that's what both computer science and acting are about. The constant want to grow, learn, and accomplish. It's something that keeps you moving.</p>
+                    <p> I love to code because of nearly the same thing, but in a different form. 
+                      It's still got a process similar to acting, but it feels quicker to me. 
+                      Preparing and understanding a problem, then being able to apply it in projects, 
+                      algorithms, etc. It is fulfilling not only because you solved the problem, but because 
+                      you have another solution under your belt, a weapon in your arsenal. 
+                      
+                      <br><br> You can constantly grow, and that's what both 
+                      coding and acting are about. The constant want to grow, learn, and accomplish. It's
+                       something that keeps you moving.</p>
                     <hr>
                     <br>
                     <br>
@@ -197,21 +238,23 @@
             <br>
             <br>
           </div>
-        <div class='container-fluid' id='footer' style = 'background-color: #2B2D2F; height:auto !important; color:#fff;'>
+</div>
+      <p class='arrow' id='arr'>&#8607;</p>
+
+        <div class='container-fluid' id='footer'>
             <div class='row'>
-                <div class ='col-sm'>
-                    <h2> Thanks for reading. Follow me on social media!</h2>
+                <div class ='col-sm-12'>
+                    <h3> Thanks for reading. Follow me on social media!</h3>
                 </div>
                 </div>
 
               <div class='row'>
-                <div class ='col-sm'>
+                <div class ='col-sm-12'>
                   Developed by: Sargon Odicho
                 </div>
             </div>
             </div>
 
-        </div>
 
 
 

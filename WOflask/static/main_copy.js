@@ -1,10 +1,39 @@
+// function move(loc) {
+//   if (loc.id === 'compsci'){
+//     const t1 = document.getElementById('CS');
+//     console.log(t1);
+//     window.scrollTo(0,625);
+//   }
+
+//  }
+
+// const home = document.getElementById('ho');
+// const cs = document.getElementById('compsci');
+// const act = document.getElementById('aft');
+// const why = document.getElementById('last');
+// home.addEventListener("click", function(){move(home)}, false);
+// cs.addEventListener("click",  function(){move(cs)}, false);
+// act.addEventListener("click",  function(){move(act)}, false);
+// why.addEventListener("click",  function(){move(why)}, false);
+
+// console.log(cs);
+
 $(function() {
     $(document).scroll(function (){
         var $nav = $(".navbar");
+        var $arrow = $(".arrow");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-
+        $arrow.toggleClass('scrolled', $(this).scrollTop() > $nav.height());  
     });
 });
+
+
+function toTop(){
+  window.scrollTo(0,0);
+}
+
+const arr = document.getElementById('arr');
+arr.addEventListener("click", toTop);
 
 // Wrap every letter in a span
 	// Credit to Tobais Ahlin for this beatiful design

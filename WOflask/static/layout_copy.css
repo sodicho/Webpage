@@ -20,6 +20,7 @@
 
 		.nav-item{
 			font-size:16px;
+			cursor:pointer;
 
 		}
 
@@ -32,6 +33,12 @@
 		.navbar.scrolled {
 			background-color: rgb(60, 70, 70) !important;
 			transition: all .2s ease-in
+		}
+
+		@media (max-width:1000px){
+			img{
+				display:none;
+			}
 		}
 	
 
@@ -60,7 +67,7 @@
 
 		@media (max-width: 768px){
 			.ml12{
-				font-size:35px !important;
+				font-size:30px !important;
 			}
 		}
 
@@ -140,7 +147,7 @@
 			*/
 
 		body{
-			background-color: #000000;
+			background-color:rgba(47, 79, 79, 0.61);
 			color: #ffffff;
 			font-family: Courier New, monospace;
 		}
@@ -153,9 +160,18 @@
 		.container{
 			background-color: transparent;	
 			color: #fff;
-		  padding: 50px;
-		
+			padding: 50px;
 		}
+		
+		#abt {
+			padding-left:115px;
+
+		}
+
+		#abt p{
+			font-size:2rem;
+		}
+
 		.creativity{
 		  background-color: transparent;  
 		  color: #fff;
@@ -166,16 +182,28 @@
 		.showing{
 		  z-index: 1;
 		}
+
+		#screenplay {
+			color:#fff !important; 
+			
+			font-size:18px
+		}
 		
 		
 		.container-fluid{
-			background-color: #fff;
-			color: #000;
-			text-align: center;
-		
-		
-		
+			background-color: transparent;	
+			color: #fff;
+			padding-top:50px;
+			padding-left:50px;
 		}
+
+		#about{
+			background-color: transparent;	
+			color: #fff;
+			padding-top:50px;
+			padding-left:0px;
+		}
+
 		.theimg{
 			background-image: url('Rand_back_copy.jpeg');
 			padding-top:1px;
@@ -223,6 +251,9 @@
 		  font-size: 80px;
 		  text-transform: uppercase;
 		  letter-spacing: 0.5em;
+		  text-align:center;
+		  padding-top:25px;
+		  padding-bottom:50px;
 		}
 		
 		.ml12 .letter {
@@ -231,18 +262,58 @@
 		}
 		
 		
-		  .list-group{
-			color: #000 !important;
-		  }
+		.list-group{
+		color: #000 !important;
+		}
+
 		
-		#footer{
-		  background-image: url('Rand_back_copy.jpeg');
-		  padding-top:1px;
-		  height: 100vh;
-		  background-position: center;
-		  background-repeat: no-repeat;
-		  background-size: cover;
-		  z-index: -1 !important; 
+
+		.jumbotron{
+			background-color: transparent;
+			font-family: Courier New, monospace;
+			
+		}
+
+		#why #CS #act {
+			background-color:transparent;
+		}
+
+		#together {
+			background: radial-gradient(circle, rgba(47, 79, 79, .7) 20%, rgba(47, 79, 79, .5) 35%, rgba(47, 79, 79, .1) 100%);
+			/* border-style: groove; 
+			border-color: #fff */
+		}
+
+		#why p {
+			font-size:2rem
+		}
+
+		.arrow{
+			color:transparent;
+			display:all;
+			font-size: 50px;
+			top:100vh;
+			transform:translateY(-100%);
+    		width:100%;
+			text-align:center;
+			position:fixed;
+			transition: ease-in-out .2s;
+		}
 		
+
+		.arrow.scrolled{
+			color:#fff;
+			transition: ease-in-out .2s;
+			cursor:pointer;
+		}
+		
+		
+		#footer {
+			background-color: rgb(60, 70, 70);
+			text-align:center;
+			padding-top:1px;
+			height:100px;
+			color:#fff; 
+	
 		}
 		
