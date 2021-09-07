@@ -23,7 +23,7 @@ $(function() {
         var $nav = $(".navbar");
         var $arrow = $(".arrow");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        $arrow.toggleClass('scrolled', $(this).scrollTop() > $nav.height());  
+        $arrow.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
 
